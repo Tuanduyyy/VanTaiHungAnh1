@@ -1,0 +1,7 @@
+{
+  "name": "Vận Tải Hùng Anh",
+  "description": "Dịch vụ vận chuyển hàng hóa toàn quốc - Nhanh chóng, Uy tín, An toàn.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
