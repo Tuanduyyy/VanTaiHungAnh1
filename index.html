@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vận Tải Hùng Anh </title>
+    <link rel="icon" type="image/png" href="/VanTaiHungAnh1/assets/fampay-BFCqlMTI.svg" />
+    <meta name="description" content="Vận Tải Hùng Anh cung cấp dịch vụ vận tải hàng hóa toàn quốc uy tín, nhanh chóng, an toàn với giá cả hợp lý. Nhận báo giá vận chuyển ngay!">
+    <meta name="keywords" content="vận chuyển hàng hóa, vận tải toàn quốc, dịch vụ vận tải, vận tải hùng anh">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS (via Vite) -->
+  <script type="module" crossorigin src="/VanTaiHungAnh1/assets/index-CwvZkle0.js"></script>
+  <link rel="stylesheet" crossorigin href="/VanTaiHungAnh1/assets/index-2xtBj4CG.css">
+</head>
+<body class="font-sans text-slate-900 bg-white scroll-smooth">
+
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <a href="#" class="flex items-center space-x-2">
+                        <div class="w-10 h-10  rounded-lg flex items-center justify-center">
+                            <svg fill="#FFAD00" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>FamPay</title><path d="M14.828 23.971a.206.206 0 01-.233-.016c-.646-.407-3.892-2.571-6.089-5.288-1.34-1.677 3.783-4.173 3.783-3.844.005 1.782.5 6.467 2.603 8.747a.268.268 0 01-.013.356l-.051.035 M13.48 13.082l4.659-2.119a4.386 4.386 0 002.542-2.636l.581-1.634a.174.174 0 00-.11-.222.171.171 0 00-.125 0l-8.897 3.771.033-.142a.902.902 0 01.439-.626c1.505-.927 6.903-3.686 6.903-3.686a6.592 6.592 0 003.53-4.112L23.444.28a.225.225 0 00-.153-.268.222.222 0 00-.144 0s-8.123 3.156-10.734 4.425C9.8 5.707 7.126 7.34 6.2 12.142c-.376 1.945.313 3.592 1.607 5.46-.006-1.836 4.637-4.02 5.673-4.52z M2.026 4.86C1.289 4.299.662 4.25.553 4.299c-.049-.174.846-.597.956-.707.362-.346.565-.804.988-1.098.863-.611 1.93-.424 2.824.064.455.25 1.709 1.071 1.728 1.112A14.02 14.02 0 018.945 5.38a.241.241 0 010 .314c-.211.203-.418.348-.675.565-1.703 1.43-2.73 5.24-2.746 5.711V12s-.999-5.38-3.498-7.14z"/></svg>
+                        </div>
+                        <div class="flex flex-col leading-none">
+                            <span class="font-display text-xl font-black tracking-tighter text-slate-900">HÙNG ANH</span>
+                            <span class="text-[10px] font-bold tracking-[0.3em] text-orange-600 uppercase">Vận tải</span>
+                        </div>
+                    </a>
+                </div>
+                <nav class="hidden md:flex space-x-10">
+                    <a href="#home" class="text-xs font-bold tracking-widest uppercase text-slate-500 hover:text-orange-600 transition-colors">Trang chủ</a>
+                    <a href="#services" class="text-xs font-bold tracking-widest uppercase text-slate-500 hover:text-orange-600 transition-colors">Dịch vụ</a>
+                    <a href="#calculator" class="text-xs font-bold tracking-widest uppercase text-slate-500 hover:text-orange-600 transition-colors">Báo giá</a>
+                    <a href="#contact" class="text-xs font-bold tracking-widest uppercase text-slate-500 hover:text-orange-600 transition-colors">Liên hệ</a>
+                </nav>
+                <div class="flex items-center space-x-4">
+                    <a href="tel:0388572672" class="hidden lg:block text-sm font-bold text-slate-900">0388 572 672</a>
+                    <a href="#calculator" class="btn-primary py-2.5 px-6 text-xs">Nhận báo giá</a>
+                    
+                    <button id="mobile-menu-button" class="md:hidden p-2 text-slate-900">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"></path>
+                            <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        
+    </header>
+    <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden fixed inset-0 z-40 bg-white pt-24 px-4 sm:px-6">
+            <nav  class="flex flex-col space-y-8 text-center">
+                <a href="#home" class="mobile-link text-2xl font-black text-slate-900 uppercase tracking-tighter">Trang chủ</a>
+                <a href="#services" class="mobile-link text-2xl font-black text-slate-900 uppercase tracking-tighter">Dịch vụ</a>
+                <a href="#calculator" class="mobile-link text-2xl font-black text-slate-900 uppercase tracking-tighter">Báo giá</a>
+                <a href="#contact" class="mobile-link text-2xl font-black text-slate-900 uppercase tracking-tighter">Liên hệ</a>
+                <div class="pt-8 border-t border-slate-100">
+                    <p class="text-sm text-slate-500 mb-4 uppercase tracking-widest font-bold">Hotline 24/7</p>
+                    <a href="tel:0388572672" class="text-3xl font-black text-orange-600 tracking-tighter">0388 572 672</a>
+                </div>
+            </nav>
+        </div>
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-12 items-center">
+                <div class="lg:col-span-7 text-center lg:text-left">
+                    <span class="section-label">Dịch vụ vận tải cao cấp</span>
+                    <h1 class="text-5xl sm:text-7xl lg:text-8xl font-black text-slate-900 leading-[1.0] tracking-tighter mb-8 ">
+                        Vận chuyển <br/> <span class="text-orange-600 italic">siêu tốc.</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-slate-500 mb-10 max-w-xl leading-relaxed">
+                        Vận Tải Hùng Anh cung cấp giải pháp vận chuyển hàng hóa  với độ chính xác tuyệt đối và sự tận tâm hàng đầu.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center lg:justify-start">
+                        <a href="#calculator" class="btn-primary">Bắt đầu ngay</a>
+                        <a href="#services" class="btn-secondary">Xem dịch vụ</a>
+                    </div>
+                    
+                </div>
+                <div class="lg:col-span-5 mt-16 lg:mt-0 relative group">
+                    <div id="hero-slider" class="relative z-10 rounded-3xl overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500 h-[500px] lg:h-[600px] cursor-grab">
+                        <div class="hero-slide absolute inset-0 opacity-100 transition-opacity duration-1000">
+                            <img src="/VanTaiHungAnh1/assets/pic4-DMjHG05h.jpg" alt="Xe tải" class="w-full h-full object-cover" referrerPolicy="no-referrer">
+                        </div>
+                        <div class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-1000">
+                            <img src="/VanTaiHungAnh1/assets/pic2-BxKusGXY.jpg" alt="Kho bãi" class="w-full h-full object-cover" referrerPolicy="no-referrer">
+                        </div>
+                        <div class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-1000">
+                            <img src="/VanTaiHungAnh1/assets/pic3-B-izk92Z.jpg" alt="Giao hàng" class="w-full h-full object-cover" referrerPolicy="no-referrer">
+                        </div>
+                        <div class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-1000">
+                            <img src="/VanTaiHungAnh1/assets/pic1-D23rmYwu.jpg" alt="Đội xe" class="w-full h-full object-cover" referrerPolicy="no-referrer">
+                        </div>
+                        <div class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-1000">
+                            <img src="/VanTaiHungAnh1/assets/pic5-CjEyAizk.jpg" alt="Container" class="w-full h-full object-cover" referrerPolicy="no-referrer">
+                        </div>
+                        
+                        
+                        <!-- Slider Controls -->
+                        <button id="prev-slide" class="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-white/20 hover:bg-white/40 backdrop-blur-md text-white p-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                        </button>
+                        <button id="next-slide" class="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-white/20 hover:bg-white/40 backdrop-blur-md text-white p-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </button>
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 w-48 h-48 bg-orange-600/10 rounded-full blur-3xl -z-10"></div>
+                    <div class="absolute -top-6 -right-6 w-48 h-48 bg-blue-600/10 rounded-full blur-3xl -z-10"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bento Highlights -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="md:col-span-2 bg-slate-900 rounded-3xl p-10 text-white relative overflow-hidden group">
+                    <div class="relative z-10">
+                        <span class="text-orange-500 font-bold text-xs tracking-widest uppercase mb-4 block">Mạng lưới của chúng tôi</span>
+                        <h3 class="text-4xl font-bold mb-6 max-w-md">Vận chuyển hàng hóa tới bất kì đâu trong toàn quốc.</h3>
+                        <p class="text-slate-400 mb-8 max-w-sm">Hệ thống hiện đại và tài xế chuyên nghiệp luôn sẵn sàng phục vụ bạn .</p>
+                        <div class="flex -space-x-3">
+                            <img src="https://i.pravatar.cc/100?u=1" class="w-10 h-10 rounded-full border-2 border-slate-900" alt="Người dùng">
+                            <img src="https://i.pravatar.cc/100?u=2" class="w-10 h-10 rounded-full border-2 border-slate-900" alt="Người dùng">
+                            <img src="https://i.pravatar.cc/100?u=3" class="w-10 h-10 rounded-full border-2 border-slate-900" alt="Người dùng">
+                            <div class="w-10 h-10 rounded-full border-2 border-slate-900 bg-orange-600 flex items-center justify-center text-[10px] font-bold">+2k</div>
+                        </div>
+                    </div>
+                    <div class="absolute top-0 right-0 w-1/2 h-full opacity-20 group-hover:opacity-40 transition-opacity">
+                        <img src="/VanTaiHungAnh1/assets/pic4-DMjHG05h.jpg" class="w-full h-full object-cover" alt="Bản đồ" referrerPolicy="no-referrer">
+                    </div>
+                </div>
+                <div class="bg-orange-600 rounded-3xl p-10 text-white flex flex-col justify-between">
+                    <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mb-8">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold mb-2">99.9%</h3>
+                        <p class="text-orange-100 text-sm">Tỷ lệ giao hàng đúng hạn trong năm 2025.</p>
+                    </div>
+                </div>
+                <div class="bg-slate-50 rounded-3xl p-10 border border-slate-100">
+                    <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mb-8">
+                        <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900">An toàn tuyệt đối</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Quy trình kiểm soát nghiêm ngặt, bảo hiểm hàng hóa 100%.</p>
+                </div>
+                <div class="md:col-span-2 bg-blue-50 rounded-3xl p-10 border border-blue-100 flex items-center justify-between overflow-hidden relative">
+                    <div class="relative z-10">
+                        <h3 class="text-2xl font-bold mb-4 text-slate-900">Tiết kiệm chi phí tối đa</h3>
+                        <p class="text-slate-500 text-sm max-w-xs">Giải pháp tối ưu hóa lộ trình giúp giảm 20% cước phí vận chuyển.</p>
+                    </div>
+                    <div class="hidden sm:block">
+                        <div class="flex space-x-2 items-end">
+                            <div class="w-8 bg-blue-200 rounded-t-lg h-20"></div>
+                            <div class="w-8 bg-blue-300 rounded-t-lg h-32"></div>
+                            <div class="w-8 bg-orange-600 rounded-t-lg h-48"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                <div class="order-2 lg:order-1 mt-12 lg:mt-0">
+                    <div class="relative">
+                        <img src="/VanTaiHungAnh1/assets/pic5-CjEyAizk.jpg" alt="Warehouse" class="rounded-3xl shadow-xl w-full" referrerPolicy="no-referrer">
+                        <div class="absolute -top-4 -right-4 w-24 h-24 sm:w-32 sm:h-32 bg-blue-600 rounded-3xl -z-10"></div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2 mb-12 lg:mb-0">
+                    <h2 class="text-sm font-bold text-blue-600 uppercase tracking-widest mb-4">Về chúng tôi</h2>
+                    <h3 class="text-3xl lg:text-4xl font-bold text-slate-900 mb-6">Hành trình  xây dựng niềm tin</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        Với hơn 5 năm kinh nghiệm, <span class="font-serif font-bold text-blue-700 italic">Vận Tải Hùng Anh</span> đã không ngừng phát triển và hoàn thiện dịch vụ vận tải khắp 63 tỉnh thành. Chúng tôi hiểu rằng mỗi kiện hàng không chỉ là tài sản mà còn là tâm huyết của khách hàng.
+                    </p>
+                    <p class="text-slate-600 mb-8 leading-relaxed">
+                        Với tài xế giàu kinh nghiệm và phương tiện vận chuyển hiện đại đa dạng tải trọng, chúng tôi cam kết mang lại dịch vụ hoàn hảo nhất.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center space-x-3 text-slate-700 font-medium">
+                            <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            <span>Vận chuyển hàng hóa xuyên tỉnh - thành phố</span>
+                        </li>
+                        <li class="flex items-center space-x-3 text-slate-700 font-medium">
+                            <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            <span>Đội ngũ nhân viên chuyên nghiệp, tận tâm</span>
+                        </li>
+                        <li class="flex items-center space-x-3 text-slate-700 font-medium">
+                            <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            <span>Phương tiện vận tải hiện đại</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modern Services -->
+    <section id="services" class="py-24 bg-slate-900 text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-16">
+                <div class="max-w-2xl">
+                    <span class="text-orange-500 font-bold text-xs tracking-widest uppercase mb-4 block">Dịch vụ của chúng tôi</span>
+                    <h2 class="text-4xl lg:text-6xl font-bold mb-6">Giải pháp vận tải <br/> <span class="text-slate-400">toàn diện.</span></h2>
+                </div>
+                <p class="text-slate-400 max-w-sm lg:mb-2">Chúng tôi cung cấp đầy đủ các loại hình vận chuyển để đáp ứng mọi nhu cầu của bạn.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group relative bg-slate-800 rounded-3xl p-8 hover:bg-orange-600 transition-all duration-500">
+                    <div class="w-14 h-14 bg-slate-700 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-white/20 transition-colors">
+                        <svg class="w-7 h-7 text-orange-500 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 16v3a2 2 0 01-2 2H7a2 2 0 01-2-2v-3m14 0v-4a2 2 0 00-2-2h-3m-4 0H7a2 2 0 00-2 2v4m14 0h-4m-4 0H7m12 0v1a2 2 0 01-2 2H7a2 2 0 01-2-2v-1m14 0h-4m-4 0H7"></path></svg>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4">Vận chuyển đường bộ</h4>
+                    <p class="text-slate-400 group-hover:text-orange-50 transition-colors">Dịch vụ vận chuyển hàng hóa bằng xe tải từ 1.5 tấn đến 21 tấn trên toàn quốc.</p>
+                </div>
+                
+                <div class="group relative bg-slate-800 rounded-3xl p-8 hover:bg-orange-600 transition-all duration-500">
+                    <div class="w-14 h-14 bg-slate-700 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-white/20 transition-colors">
+                        <svg class="w-7 h-7 text-orange-500 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4">Chuyển nhà trọn gói</h4>
+                    <p class="text-slate-400 group-hover:text-orange-50 transition-colors">Giải pháp trọn gói từ tháo dỡ, đóng gói đến lắp đặt tại địa điểm mới.</p>
+                </div>
+
+                <div class="group relative bg-slate-800 rounded-3xl p-8 hover:bg-orange-600 transition-all duration-500">
+                    <div class="w-14 h-14 bg-slate-700 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-white/20 transition-colors">
+                        <svg class="w-7 h-7 text-orange-500 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4">Vận chuyển Bắc Nam</h4>
+                    <p class="text-slate-400 group-hover:text-orange-50 transition-colors">Chuyên chở các loại máy móc, thiết bị công nghiệp với tải trọng tối đa 21 tấn.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modern Calculator -->
+    <section id="calculator" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <span style="font-size: 150%;" class="section-label">Báo giá tức thì</span>
+                <h2 class="text-4xl lg:text-6xl font-bold text-slate-900 mb-6">Tính giá minh bạch.</h2>
+                <p class="text-slate-500">Nhập thông tin để nhận báo giá dự kiến ngay lập tức.</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-orange-100 rounded-[2rem] p-8 lg:p-12 border border-slate-100">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                        <div class="space-y-4">
+                            <label class="text-xs font-bold text-black uppercase tracking-widest">Khoảng cách (km)</label>
+                            <input type="number" id="distance-input" min="0" max="5000" oninput="if(value>5000)value=5000;if(value<0)value=0" placeholder="0" class="w-full bg-white border-none rounded-2xl px-6 py-4 text-xl font-bold focus:ring-2 focus:ring-orange-600 outline-none shadow-sm transition-all">
+                        </div>
+                        <div class="space-y-4">
+                            <label class="text-xs font-bold text-black uppercase tracking-widest">Cân nặng (kg)</label>
+                            <input type="number" id="weight-input" min="0" max="21000" oninput="if(value>21000)value=21000;if(value<0)value=0" placeholder="0" class="w-full bg-white border-none rounded-2xl px-6 py-4 text-xl font-bold focus:ring-2 focus:ring-orange-600 outline-none shadow-sm transition-all">
+                        </div>
+                    </div>
+                    
+                    <div id="result-container" class="hidden">
+                        <div class="bg-white rounded-3xl p-8 shadow-xl shadow-slate-200/50 flex flex-col items-center">
+                            <span class="text-xs font-bold text-black uppercase tracking-widest mb-2">Giá dự kiến</span>
+                            <div id="price-value" class="text-5xl font-black text-orange-600 mb-4">0 đ</div>
+                            <p class="text-[15px] text-black italic">* Liên hệ để có giá chính xác nhất</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Modern Contact -->
+    <section id="contact" class="py-24 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:items-center">
+                <div>
+                    <span class="text-orange-500 font-bold text-xs tracking-widest uppercase mb-4 block">Liên hệ với chúng tôi</span>
+                    <h2 class="text-4xl lg:text-7xl font-bold mb-8 leading-tight">Sẵn sàng vận chuyển? <br/> <span class="text-slate-500 italic">Liên hệ ngay.</span></h2>
+                    
+                    <div class="space-y-8 mt-12">
+                        <a href="tel:0388572672" class="flex items-start group">
+                            <div class="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center mr-6 shrink-0 group-hover:bg-orange-600 transition-colors">
+                                <svg  class="w-6 h-6 text-orange-500 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">Hotline 24/7</p>
+                                <p class="text-xl font-bold">0388 572 672</p>
+                            </div>
+                        </a>
+                        <a href="https://maps.app.goo.gl/R1LTgJ6u7vTjPjLq6" target="_blank" class="flex items-start group">
+                            <div class="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center mr-6 shrink-0 group-hover:bg-orange-600 transition-colors">
+                                <svg class="w-6 h-6 text-orange-500 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">Văn phòng</p>
+                                <p class="text-xl font-bold">Ấp Phú Sơn, Xã Nghĩa Thành, TP HCM (BRVT Cũ)</p>
+                            </div>
+                        </a>
+                        <a href="https://www.facebook.com/hung.duong.894025" target="_blank" class="flex items-start group">
+                            <div class="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center mr-6 shrink-0 group-hover:bg-orange-600 transition-colors">
+                                <svg class="w-6 h-6 text-orange-500 group-hover:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">Facebook</p>
+                                <p class="text-xl font-bold">Vận Tải Hùng Anh</p>
+                                <span class="text-orange-500 text-xs font-bold hover:underline">Ghé thăm trang</span>
+                            </div>
+                        </a>
+                        <a href="https://zalo.me/0388572672" target="_blank" class="flex items-start group">
+                            <div class="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center mr-6 shrink-0 group-hover:bg-orange-600 transition-colors">
+                                <svg class="w-8 h-8 text-orange-500 group-hover:text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.83 0.5 3.53 1.36 5l-1.11 4.44l4.54-1.13C8.24 21.49 10.04 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z M15.5 15.5h-7v-1.5l4-4h-4V8.5h7v1.5l-4 4h4V15.5z"/></svg>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">Zalo</p>
+                                <p class="text-xl font-bold">0388 572 672</p>
+                                <span class="text-orange-500 text-xs font-bold hover:underline">Nhắn tin Zalo</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-[2.5rem] p-8 lg:p-12 text-slate-900">
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label class="text-[10px] font-bold text-black uppercase tracking-widest">Họ và tên</label>
+                                <input type="text" id="contact-name" required class="w-full bg-slate-50 border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-orange-600 outline-none">
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-[10px] font-bold text-black uppercase tracking-widest">Số điện thoại</label>
+                                <input type="tel" id="contact-phone" required class="w-full bg-slate-50 border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-orange-600 outline-none">
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-[10px] font-bold text-black uppercase tracking-widest">Dịch vụ quan tâm</label>
+                            <select id="contact-service" class="w-full bg-slate-50 border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-orange-600 outline-none">
+                                <option>Vận chuyển đường bộ</option>
+                                <option>Chuyển nhà trọn gói</option>
+                                <option>Vận chuyển Bắc Nam</option>
+                                <option >Khác</option>
+                            </select>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-[10px] font-bold text-black uppercase tracking-widest">Lời nhắn</label>
+                            <textarea id="contact-message" rows="4" class="w-full bg-slate-50 border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-orange-600 outline-none resize-none"></textarea>
+                        </div>
+                        <div class="grid grid-cols-1 gap-4">
+                            <button type="submit" class="w-full bg-[#0068ff] text-white font-bold py-4 rounded-xl hover:bg-blue-700 transition-colors uppercase tracking-widest text-[12px] flex items-center justify-center space-x-2">
+                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.83 0.5 3.53 1.36 5l-1.11 4.44l4.54-1.13C8.24 21.49 10.04 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z M15.5 15.5h-7v-1.5l4-4h-4V8.5h7v1.5l-4 4h4V15.5z"/></svg>
+                                <span>Gửi thông tin qua Zalo</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Maps Section -->
+    <section class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="section-label">Vị trí của chúng tôi</span>
+                <h2 class="text-4xl font-black text-slate-900 tracking-tighter">Tìm chúng tôi trên bản đồ</h2>
+            </div>
+            <div class="rounded-3xl overflow-hidden shadow-2xl border-8 border-white h-[450px]">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d245.11316492594597!2d107.28200530928515!3d10.593973493906288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317509005a124e0d%3A0xcce6b6ec3a86e00a!2zVuG6rW4gVOG6o2kgSMO5bmcgQW5o!5e0!3m2!1svi!2sus!4v1775106361276!5m2!1svi!2sus"
+                 width="100%" 
+                 height="100%" 
+                 style="border:0;" 
+                 allowfullscreen="" 
+                 loading="lazy" 
+                 referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modern Footer -->
+    <footer class="bg-white border-t border-slate-100 pt-24 pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-24">
+                <div class="md:col-span-1">
+                    <div class="flex items-center space-x-2 mb-8">
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/fampay/default.svg"
+                                alt="FamPay"
+                                width="24"
+                                height="24"
+                                />
+                        <span class="text-xl font-bold tracking-tighter text-slate-900 uppercase">Hùng Anh</span>
+                    </div>
+                    <p class="text-slate-500 mb-8">Đơn vị vận tải hàng đầu Việt Nam với hơn 10 năm kinh nghiệm trong lĩnh vực logistics.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-sm font-bold text-slate-900 uppercase tracking-widest mb-8">Liên hệ</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start space-x-3 group">
+                            <svg class="w-5 h-5 text-orange-600 mt-0.5 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            <a href="https://maps.app.goo.gl/utVsReiDWXD5NxMPA" target="_blank" class="text-slate-500 text-sm hover:text-orange-600">Ấp Phú Sơn, Xã Nghĩa Thành, TP HCM (BRVT Cũ)</a>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            <a href="tel:0388572672" class="text-slate-500 text-sm hover:text-orange-600">0388 572 672</a>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <div class="w-5 h-5 flex items-center justify-center">
+                                <svg class="w-5 h-5 text-orange-600" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.83 0.5 3.53 1.36 5l-1.11 4.44l4.54-1.13C8.24 21.49 10.04 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z M15.5 15.5h-7v-1.5l4-4h-4V8.5h7v1.5l-4 4h4V15.5z"/></svg>
+                            </div>
+                            <a href="https://zalo.me/0388572672" target="_blank" class="text-slate-500 text-sm hover:text-orange-600">Zalo: 0388 572 672</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pt-12 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-slate-400 text-sm mb-4 md:mb-0">&copy;  Vận Tải Hùng Anh.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Floating Contact Buttons -->
+    <div class="fixed bottom-8 right-8 z-[100] flex flex-col space-y-4">
+        <!-- Facebook Button -->
+        <a href="https://www.facebook.com/hung.duong.894025" target="_blank" class="group relative flex items-center justify-center w-14 h-14 bg-blue-800 text-white rounded-2xl shadow-xl hover:scale-110 transition-all">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <!-- Zalo Button -->
+        <a href="https://zalo.me/0388572672" target="_blank" class="group relative flex items-center justify-center w-14 h-14 bg-[#0068ff] text-white rounded-2xl shadow-xl hover:scale-110 transition-all">
+            <svg class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.83 0.5 3.53 1.36 5l-1.11 4.44l4.54-1.13C8.24 21.49 10.04 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z M15.5 15.5h-7v-1.5l4-4h-4V8.5h7v1.5l-4 4h4V15.5z"/></svg>
+        </a>
+        <!-- Phone Button -->
+        <a href="tel:0388572672" class="group relative flex items-center justify-center w-14 h-14 bg-orange-600 text-white rounded-2xl shadow-xl hover:scale-110 transition-all">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+            <span class="absolute inset-0 rounded-2xl bg-orange-600 animate-ping opacity-20"></span>
+        </a>
+    </div>
+
+    <!-- Main Script -->
+</body>
+</html>
